@@ -1,0 +1,46 @@
+body{
+    background-color:rgb(255, 255, 255);
+}
+div{
+    background-color: rgb(201, 201, 201);
+    box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
+    display: flex;
+    justify-content: flex-start;
+}
+.head{
+    color: rgb(97, 116, 114);
+    font-size: x-large;
+    margin-left: 25px;
+    margin-right: 840px;
+}
+button, select {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    border: 3px double rgb(97, 116, 114);
+    margin-top: 10px;
+    position: relative;
+    color: #546864;
+    height: 35px;
+    width: 90px;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .ico{
+    text-decoration: none;
+    color:rgb(33, 37, 35) ;
+    font-size: larger;
+}
+ul{
+    display: flex;
+  justify-content: flex-start;
+}
+
+footer{
+  background-color: #546864;  
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
+  height: 150px;
+}
