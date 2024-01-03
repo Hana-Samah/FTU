@@ -7,17 +7,17 @@ margin: 40px;
 width: 140px;
 height: 140px;
 }
-div{
-  background-color: rgb(201, 201, 201);
-  box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
-  display: flex;
-  justify-content: flex-start;
+.stylehead{
+background-color: rgb(201, 201, 201);
+box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
+display: flex;
+justify-content: flex-start;
 }
 .head{
   color: rgb(97, 116, 114);
   font-size: x-large;
   margin-left: 25px;
-  margin-right: 840px;
+  margin-right: 870px;
 }
 button, select {
   text-transform: uppercase;
@@ -48,29 +48,39 @@ margin:0 40px;
 margin-bottom: 50px;
 text-align: center;
 }
-footer{
-background-color: #546864;  
-display: flex;
-justify-content: flex-start;
-box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
-height: 150px;
+
+.footer{
+margin-top: 15px;
+padding: 100px 15%;
+background-color:rgb(62, 85, 73);
 color: aliceblue;
-font-family: 'Trebuchet MS', sans-serif;
-}
-
-#ficon{
-margin: 30px;
-}
-#mdialogo{
 display: flex;
-justify-content: flex-start;
-margin-left: 30px;
-height: 30px;
-width: 30px;
-margin-top: 50px;
-
 }
-.longin{
+.footer div{
+text-align: center;
+}
+.col2{
+flex-grow: 2;
+}
+.footer div h3{
+font-weight: 300;
+margin-bottom: 30px;
+letter-spacing: 1px;
+}
+.col1 a{
+display: block;
+text-decoration: none;
+color: #efefef;
+margin-bottom: 10px;
+}
+
+#mdialogo {
+margin-left: 5px;
+height: 2px;
+width: 2px;
+margin-bottom: 3px;
+}
+.login{
 width: 400px;
 height: 500px;
 background-color:rgb(197, 250, 223);
@@ -82,7 +92,7 @@ background-size: cover;
 background-position: center;
 overflow: hidden;
 }
-.Flongin{
+.Flogin{
 display: block;
 box-sizing: border-box;
 padding: 40px;
@@ -102,8 +112,8 @@ label{
 color:  white;
 text-transform: uppercase;
 font-size: 15px;
-letter-spacing: 2px;
-padding: 10px;
+
+padding: 2px;
 
 }
 input{
