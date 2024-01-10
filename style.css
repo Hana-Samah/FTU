@@ -1,24 +1,29 @@
+/* give the body background color */
 body{
   background-color:rgb(255, 255, 255);
 }
+/* fix the size and location of the uni logo */
 #logo{
 float: left;
 margin: 40px;
 width: 140px;
 height: 140px;
 }
+/* style the head and give it color and size */
 .stylehead{
 background-color: rgb(201, 201, 201);
 box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
 display: flex;
 justify-content: flex-start;
 }
+/* style the name of the uni in the head */
 .head{
   color: rgb(97, 116, 114);
   font-size: x-large;
   margin-left: 25px;
   margin-right: 870px;
 }
+/* style the login button and langauge select give it to them the color, size, location and border*/
 button, select {
   text-transform: uppercase;
   text-align: center;
@@ -34,12 +39,13 @@ button, select {
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
 }
-
-ul{
+/* write the set of all ul */
+ul {
 display: flex;
 justify-content: flex-start;
 margin-left: 30px;
 }
+/* fix the text link */
 .descr {
 text-decoration: none;
 color:rgb(33, 37, 35) ;
@@ -48,7 +54,7 @@ margin:0 40px;
 margin-bottom: 50px;
 text-align: center;
 }
-
+/* design the footer*/
 .footer{
 margin-top: 15px;
 padding: 100px 15%;
@@ -56,30 +62,44 @@ background-color:rgb(62, 85, 73);
 color: aliceblue;
 display: flex;
 }
+/* fix element position*/
 .footer div{
 text-align: center;
 }
+/* fix the size and location of the uni logo */
+.logf{
+display: flex;
+justify-content:left ;
+margin-right: 70px;
+margin-left: 0;
+width: 130px;
+height: 130px;
+}
+/* fix secend colom in footer */
 .col2{
 flex-grow: 2;
 }
+/* fix third colom in footer */
 .footer div h3{
 font-weight: 300;
 margin-bottom: 30px;
 letter-spacing: 1px;
 }
+/* fix first colom in footer */
 .col1 a{
 display: block;
 text-decoration: none;
 color: #efefef;
 margin-bottom: 10px;
 }
-
-#mdialogo {
+/* fix the logo of social mdia */
+#medialogo {
 margin-left: 5px;
 height: 2px;
 width: 2px;
 margin-bottom: 3px;
 }
+/* design for login page */
 .login{
 width: 400px;
 height: 500px;
@@ -92,6 +112,7 @@ background-size: cover;
 background-position: center;
 overflow: hidden;
 }
+/* design form login page */
 .Flogin{
 display: block;
 box-sizing: border-box;
@@ -103,19 +124,20 @@ flex-direction: column;
 display: flex;
 gap: 5px;
 }
+/* design the head of login page */
 h1{
 font-weight: normal;
 font-size: 24px;
 text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
+/* design text of input in login page */
 label{
 color:  white;
 text-transform: uppercase;
 font-size: 15px;
-
 padding: 2px;
-
 }
+/* design the input of login page */
 input{
 background: white;
 height: 30px;
