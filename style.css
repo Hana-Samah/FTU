@@ -8,6 +8,9 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 1%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 /* fix the size and location of the uni logo */
@@ -79,10 +82,13 @@ select {
 
 .crbiLOGO2 {
   margin: 14px;
-  margin-top: 12%;
+  margin-top: 5%;
   margin-bottom: 0%;
   width: 15%;
   text-align: center;
+}
+.crbiLOGO2 img{
+  width: 90px;
 }
 
 .descr1 {
@@ -110,34 +116,117 @@ select {
   font-size: 21px;
 
 }
+.container{
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 4px double #686654;
+  margin-bottom: 4rem;
 
-.instructions {
-  width: 100%;
-  text-align: center;
 }
+#instructions{
+  width: fit-content;
+  font-size: 35px;
+  color: #686654;
+  margin-top: -2.5rem;
+  background-color: rgb(255, 255, 255);
 
-.instructions img {
-  width: 80%;
 }
-
-.news {
-  width: 100%;
-  text-align: center;
-  margin-top: 2%;
+.slider-wrapper{
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
 }
+.slider{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 0.5rem;
+  
+}
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: scale-down;
+  background-color: rgb(255, 255, 255);
 
-.news legend {
-  font-size: 30px;
-  color: #2c3a37;
-  border: 1px solid rgb(97, 116, 114);
+}
+.slide-nav{
+  display: flex;
+  column-gap: 2rem;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+}
+.slide-nav a{
+  width: 3rem;
+  height: 0.75rem;
   border-radius: 20px;
-  width: 200px;
+  background-color: #535353;
+  opacity: 0.88;
+  transition: opacity ease 25ms;
 }
-
-.news img {
-  width: 80%;
+.slide-nav a:hover{
+  opacity: 1;
 }
+.container2{
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 4px double #686654;
 
+}
+#News{
+  width: fit-content;
+  font-size: 35px;
+  color: #686654;
+  margin-top: -2.5rem;
+  background-color: rgb(255, 255, 255);
+
+}
+.slider-wrapper2{
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.slider2{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 0.5rem;
+  
+}
+.slider2 img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: scale-down;
+  background-color: rgb(255, 255, 255);
+
+}
+.slide-nav2{
+  display: flex;
+  column-gap: 2rem;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+}
+.slide-nav2 a{
+  width: 3rem;
+  height: 0.75rem;
+  border-radius: 20px;
+  background-color: #535353;
+  opacity: 0.88;
+  transition: opacity ease 25ms;
+}
+.slide-nav2 a:hover{
+  opacity: 1;
+}
 .footer {
   margin-top: 15px;
   background-color: rgb(100, 99, 99);
@@ -231,13 +320,11 @@ select {
       box-shadow: 5px 5px 5px 5px rgba(71, 114, 35, 0.233);
     }
 
-
     .log a {
       font-size: 30px;
       font-weight: 600;
       color: #3c5f28;
     }
-
 
     button,
     select {
@@ -247,7 +334,6 @@ select {
       height: 40px;
       width: 76px;
     }
-
 
     .image img {
       float: none;
@@ -264,6 +350,9 @@ select {
       margin-top: 1%;
     }
 
+    .crbiLOGO2 img {
+      width: 70px;
+    }
 
     .descr2 a {
       color: rgb(35, 66, 47);
@@ -276,25 +365,55 @@ select {
       text-decoration: wavy;
     }
 
-
-    .instructions img {
-      width: 100%;
+    .container {
+      background-color: #f8fff2;
+      border: 4px double rgb(80, 92, 69);
     }
 
-    .news img {
-      width: 100%;
-    }
-
-    .news legend {
-      font-size: 25px;
+    #instructions {
+      font-size: 27px;
       color: rgb(35, 66, 47);
-      ;
-      border: 1px solid rgb(35, 66, 47);
-      ;
-      border-radius: 20px;
-      width: 170px;
+      margin-top: -2.3rem;
+      background-color: #f8fff2;
+
     }
 
+    .slider-wrapper {
+      max-width: 100%;
+    }
+
+    .slider img {
+      background-color: #f8fff2;
+    }
+
+    .slide-nav a {
+      background-color: #1b4131;
+    }
+
+    .container2 {
+      background-color: #f8fff2;
+      border: 4px double rgb(80, 92, 69);
+    }
+
+    #News {
+      font-size: 27px;
+      color: rgb(35, 66, 47);
+      margin-top: -2.3rem;
+      background-color: #f8fff2;
+
+    }
+
+    .slider-wrapper2 {
+      max-width: 100%;
+    }
+
+    .slider2 img {
+      background-color: #f8fff2;
+    }
+
+    .slide-nav2 a {
+      background-color: #1b4131;
+    }
     .footer {
       margin-top: 15px;
       background-color: rgb(80, 92, 69);
@@ -347,8 +466,7 @@ select {
       margin-bottom: 3px;
     }
   }
-}
-
+}  
 @media only screen and (max-width:540px) {
   body {
     background-color: #fefff8;
@@ -388,7 +506,6 @@ select {
     .descr2 {
       text-align: center;
       border: 2px solid #f0e98a;
-      ;
       width: auto;
       margin: 0;
     }
@@ -409,19 +526,55 @@ select {
       color: rgb(114, 91, 28);
       font-size: 14px;
     }
+    .container {
+      margin-top: 10%;
+      background-color:  #fefff8;
+      border: 4px double rgb(114, 91, 28); 
+    }
+    #instructions {
+      font-size: 23px;
+      color: rgb(114, 91, 28);
+      margin-top: -2rem;
+      background-color:  #fefff8;
+      text-align: center;
+      width: auto;
+      border: 4px double rgb(114, 91, 28);
+    }
 
-    .news legend {
-      font-size: 20px;
-      color: #694b0f;
-      border: 1px solid #694b0f;
-      border-radius: 20px;
-      width: 150px;
+    .slider img {
+      background-color: #f8fff2;
+    }
+
+    .slide-nav a {
+      background-color: rgb(151, 143, 71)
+    }
+    .container2 {
+      margin-top: 10%;
+      background-color:  #fefff8;
+      border: 4px double rgb(114, 91, 28); 
+    }
+    #News {
+      font-size: 23px;
+      color: rgb(114, 91, 28);
+      margin-top: -2rem;
+      background-color:  #fefff8;
+      text-align: center;
+      width: auto;
+      border: 4px double rgb(114, 91, 28);
+    }
+
+    .slider2 img {
+      background-color: #f8fff2;
+    }
+
+    .slide-nav2 a {
+      background-color: rgb(151, 143, 71)
     }
 
     .footer {
       background-color: rgb(151, 143, 71);
     }
- 
+
     .footer div h3 {
       font-size: small;
     }
