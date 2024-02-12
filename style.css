@@ -227,6 +227,32 @@ select {
 .slide-nav2 a:hover{
   opacity: 1;
 }
+.VisitorCounter {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #504e41;
+background-color: #dbdada;
+}
+
+.VisitorCounter h2 {
+  margin-bottom: 0%;
+  font-size: 22px;
+}
+
+.VisitorCounter p {
+  font-size: 20px;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  
+}
+.counter{
+  font-size: larger;
+  font-weight: 800;
+}
+
 .footer {
   margin-top: 15px;
   background-color: rgb(100, 99, 99);
@@ -324,9 +350,7 @@ select {
       font-size: 30px;
       font-weight: 600;
       color: #3c5f28;
-    }
-
-    button,
+    }button,
     select {
       font-size: 14px;
       border: 3px double #3c5f28;
@@ -334,7 +358,7 @@ select {
       height: 40px;
       width: 76px;
     }
-
+    
     .image img {
       float: none;
       display: flex;
@@ -343,76 +367,86 @@ select {
       margin: auto;
       margin-top: 6px;
     }
-
+    
     .crbiLOGO2 {
       margin: 14px;
       margin-bottom: 0%;
       margin-top: 1%;
     }
-
+    
     .crbiLOGO2 img {
       width: 70px;
     }
-
+    
     .descr2 a {
       color: rgb(35, 66, 47);
       font-size: 15px;
     }
-
+    
     .descr2 a:hover {
       color: rgb(35, 66, 47);
       font-size: 16px;
       text-decoration: wavy;
     }
-
+    
     .container {
       background-color: #f8fff2;
       border: 4px double rgb(80, 92, 69);
     }
-
+    
     #instructions {
       font-size: 27px;
       color: rgb(35, 66, 47);
       margin-top: -2.3rem;
       background-color: #f8fff2;
-
+    
     }
-
+    
     .slider-wrapper {
       max-width: 100%;
     }
-
+    
     .slider img {
       background-color: #f8fff2;
     }
-
+    
     .slide-nav a {
       background-color: #1b4131;
     }
-
+    
     .container2 {
       background-color: #f8fff2;
       border: 4px double rgb(80, 92, 69);
     }
-
+    
     #News {
       font-size: 27px;
       color: rgb(35, 66, 47);
       margin-top: -2.3rem;
       background-color: #f8fff2;
-
+    
     }
-
+    
     .slider-wrapper2 {
       max-width: 100%;
     }
-
+    
     .slider2 img {
       background-color: #f8fff2;
     }
-
+    
     .slide-nav2 a {
       background-color: #1b4131;
+    }
+    
+    .VisitorCounter {
+      color:  #1b4131;
+    background-color:  #d4e4cf;
+    }
+    
+    .counter{
+      font-size: larger;
+      font-weight: 800;
     }
     .footer {
       margin-top: 15px;
@@ -568,9 +602,26 @@ select {
     }
 
     .slide-nav2 a {
-      background-color: rgb(151, 143, 71)
+      background-color: rgb(151, 143, 71);
     }
 
+    .VisitorCounter {
+      color: #694b0f;
+    background-color:rgb(255, 250, 206)
+    }
+    
+    .VisitorCounter h2 {
+
+      font-size: 18px;
+    }
+    
+    .VisitorCounter p {
+      font-size: 16px;  
+    }
+    .counter{
+      font-size: large;
+      font-weight: 400;
+    }
     .footer {
       background-color: rgb(151, 143, 71);
     }
