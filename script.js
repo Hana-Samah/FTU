@@ -20,6 +20,7 @@ localStorage.setItem('visitorCount', count);
 // Display the count
 counterElement.innerText =  count;
 
+// for button to go up the page
 document.getElementById('go-to-top').addEventListener('click', function(e) {
   e.preventDefault(); // Prevent default anchor link behavior
   window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top

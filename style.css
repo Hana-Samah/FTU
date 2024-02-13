@@ -87,7 +87,8 @@ select {
   width: 15%;
   text-align: center;
 }
-.crbiLOGO2 img{
+
+.crbiLOGO2 img {
   width: 90px;
 }
 
@@ -116,25 +117,33 @@ select {
   font-size: 21px;
 
 }
+
 #go-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 11em;
   right: 20px;
-  z-index: 999; /* Make sure the button is always on top */
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  z-index: 999;
+  /* Make sure the button is always on top */
   cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #84898d;
 }
 
-.container{
+#go-to-top img {
+  width: 40px;
+}
+
+
+.container {
   padding: 1rem;
   background-color: rgb(255, 255, 255);
   border: 4px double #686654;
   margin-bottom: 4rem;
 
 }
-#instructions{
+
+#instructions {
   width: fit-content;
   font-size: 35px;
   color: #686654;
@@ -142,37 +151,42 @@ select {
   background-color: rgb(255, 255, 255);
 
 }
-.slider-wrapper{
+
+.slider-wrapper {
   position: relative;
   max-width: 50%;
   margin: 0 auto;
 }
-.slider{
+
+.slider {
   display: flex;
   aspect-ratio: 16/9;
   overflow: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   border-radius: 0.5rem;
-  
+
 }
-.slider img{
+
+.slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: scale-down;
   background-color: rgb(255, 255, 255);
 
 }
-.slide-nav{
+
+.slide-nav {
   display: flex;
   column-gap: 2rem;
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   background-color: rgb(255, 255, 255);
 }
-.slide-nav a{
+
+.slide-nav a {
   width: 3rem;
   height: 0.75rem;
   border-radius: 20px;
@@ -180,16 +194,19 @@ select {
   opacity: 0.88;
   transition: opacity ease 25ms;
 }
-.slide-nav a:hover{
+
+.slide-nav a:hover {
   opacity: 1;
 }
-.container2{
+
+.container2 {
   padding: 1rem;
   background-color: rgb(255, 255, 255);
   border: 4px double #686654;
 
 }
-#News{
+
+#News {
   width: fit-content;
   font-size: 35px;
   color: #686654;
@@ -197,37 +214,42 @@ select {
   background-color: rgb(255, 255, 255);
 
 }
-.slider-wrapper2{
+
+.slider-wrapper2 {
   position: relative;
   max-width: 50%;
   margin: 0 auto;
 }
-.slider2{
+
+.slider2 {
   display: flex;
   aspect-ratio: 16/9;
   overflow: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   border-radius: 0.5rem;
-  
+
 }
-.slider2 img{
+
+.slider2 img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: scale-down;
   background-color: rgb(255, 255, 255);
 
 }
-.slide-nav2{
+
+.slide-nav2 {
   display: flex;
   column-gap: 2rem;
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   background-color: rgb(255, 255, 255);
 }
-.slide-nav2 a{
+
+.slide-nav2 a {
   width: 3rem;
   height: 0.75rem;
   border-radius: 20px;
@@ -235,9 +257,11 @@ select {
   opacity: 0.88;
   transition: opacity ease 25ms;
 }
-.slide-nav2 a:hover{
+
+.slide-nav2 a:hover {
   opacity: 1;
 }
+
 .VisitorCounter {
   margin-top: 1em;
   display: flex;
@@ -245,7 +269,7 @@ select {
   align-items: center;
   flex-direction: column;
   color: #504e41;
-background-color: #dbdada;
+  background-color: #dbdada;
 }
 
 .VisitorCounter h2 {
@@ -257,9 +281,10 @@ background-color: #dbdada;
   font-size: 20px;
   margin-top: 0%;
   margin-bottom: 1%;
-  
+
 }
-.counter{
+
+.counter {
   font-size: larger;
   font-weight: 800;
 }
@@ -361,7 +386,9 @@ background-color: #dbdada;
       font-size: 30px;
       font-weight: 600;
       color: #3c5f28;
-    }button,
+    }
+
+    button,
     select {
       font-size: 14px;
       border: 3px double #3c5f28;
@@ -369,7 +396,7 @@ background-color: #dbdada;
       height: 40px;
       width: 76px;
     }
-    
+
     .image img {
       float: none;
       display: flex;
@@ -378,87 +405,95 @@ background-color: #dbdada;
       margin: auto;
       margin-top: 6px;
     }
-    
+
     .crbiLOGO2 {
       margin: 14px;
       margin-bottom: 0%;
       margin-top: 1%;
     }
-    
+
     .crbiLOGO2 img {
       width: 70px;
     }
-    
+
     .descr2 a {
       color: rgb(35, 66, 47);
       font-size: 15px;
     }
-    
+
     .descr2 a:hover {
       color: rgb(35, 66, 47);
       font-size: 16px;
       text-decoration: wavy;
     }
-    
+
+    #go-to-top {
+      bottom: 9em;
+      padding: 0;
+      border-radius: 50%;
+      background-color: rgb(108, 117, 100);
+    }
+
     .container {
       background-color: #f8fff2;
       border: 4px double rgb(80, 92, 69);
     }
-    
+
     #instructions {
       font-size: 27px;
       color: rgb(35, 66, 47);
       margin-top: -2.3rem;
       background-color: #f8fff2;
-    
+
     }
-    
+
     .slider-wrapper {
       max-width: 100%;
     }
-    
+
     .slider img {
       background-color: #f8fff2;
     }
-    
+
     .slide-nav a {
       background-color: #1b4131;
     }
-    
+
     .container2 {
       background-color: #f8fff2;
       border: 4px double rgb(80, 92, 69);
     }
-    
+
     #News {
       font-size: 27px;
       color: rgb(35, 66, 47);
       margin-top: -2.3rem;
       background-color: #f8fff2;
-    
+
     }
-    
+
     .slider-wrapper2 {
       max-width: 100%;
     }
-    
+
     .slider2 img {
       background-color: #f8fff2;
     }
-    
+
     .slide-nav2 a {
       background-color: #1b4131;
     }
-    
+
     .VisitorCounter {
-      color:  #1b4131;
-    background-color:  #d4e4cf;
+      color: #1b4131;
+      background-color: #d4e4cf;
     }
-    
-    .counter{
+
+    .counter {
       font-size: larger;
       font-weight: 800;
     }
+
     .footer {
       margin-top: 15px;
       background-color: rgb(80, 92, 69);
@@ -511,7 +546,8 @@ background-color: #dbdada;
       margin-bottom: 3px;
     }
   }
-}  
+}
+
 @media only screen and (max-width:540px) {
   body {
     background-color: #fefff8;
@@ -564,23 +600,34 @@ background-color: #dbdada;
 
     .descr1 :hover {
       background-color: #e7df6d;
-      ;
+
     }
 
     .descr2 a:hover {
       color: rgb(114, 91, 28);
       font-size: 14px;
     }
+
+    #go-to-top {
+      bottom: 8em;
+      padding: 0;
+      border-radius: 50%;
+      background-color: #e7df6d;
+    }
+
+
+
     .container {
       margin-top: 10%;
-      background-color:  #fefff8;
-      border: 4px double rgb(114, 91, 28); 
+      background-color: #fefff8;
+      border: 4px double rgb(114, 91, 28);
     }
+
     #instructions {
       font-size: 23px;
       color: rgb(114, 91, 28);
       margin-top: -2rem;
-      background-color:  #fefff8;
+      background-color: #fefff8;
       text-align: center;
       width: auto;
       border: 4px double rgb(114, 91, 28);
@@ -593,16 +640,18 @@ background-color: #dbdada;
     .slide-nav a {
       background-color: rgb(151, 143, 71)
     }
+
     .container2 {
       margin-top: 10%;
-      background-color:  #fefff8;
-      border: 4px double rgb(114, 91, 28); 
+      background-color: #fefff8;
+      border: 4px double rgb(114, 91, 28);
     }
+
     #News {
       font-size: 23px;
       color: rgb(114, 91, 28);
       margin-top: -2rem;
-      background-color:  #fefff8;
+      background-color: #fefff8;
       text-align: center;
       width: auto;
       border: 4px double rgb(114, 91, 28);
@@ -618,21 +667,23 @@ background-color: #dbdada;
 
     .VisitorCounter {
       color: #694b0f;
-    background-color:rgb(255, 250, 206)
+      background-color: rgb(255, 250, 206)
     }
-    
+
     .VisitorCounter h2 {
 
       font-size: 18px;
     }
-    
+
     .VisitorCounter p {
-      font-size: 16px;  
+      font-size: 16px;
     }
-    .counter{
+
+    .counter {
       font-size: large;
       font-weight: 400;
     }
+
     .footer {
       background-color: rgb(151, 143, 71);
     }
