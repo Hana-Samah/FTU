@@ -116,6 +116,17 @@ select {
   font-size: 21px;
 
 }
+#go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; /* Make sure the button is always on top */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .container{
   padding: 1rem;
   background-color: rgb(255, 255, 255);
