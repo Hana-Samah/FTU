@@ -1,8 +1,8 @@
+/* A common style for all elements */
 * {
   box-sizing: border-box;
   text-decoration: none;
 }
-
 /* give the body background color */
 body {
   background-color: rgb(255, 255, 255);
@@ -12,7 +12,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 /* fix the size and location of the uni logo */
 .logo {
   float: left;
@@ -20,7 +19,6 @@ body {
   width: 140px;
   height: 140px;
 }
-
 /* style the head and give it color and size */
 .navbar {
   background-color: rgb(201, 201, 201);
@@ -29,7 +27,6 @@ body {
   padding-left: 2%;
   box-shadow: 5px 5px 5px 5px rgba(0.10, 0.1, 0.1, 0.1);
 }
-
 .navdiv {
   display: flex;
   align-items: center;
@@ -120,7 +117,7 @@ select {
 
 #go-to-top {
   position: fixed;
-  bottom: 11em;
+  bottom: 1.5em;
   right: 20px;
   z-index: 999;
   /* Make sure the button is always on top */
@@ -134,13 +131,12 @@ select {
   width: 40px;
 }
 
-
 .container {
   padding: 1rem;
   background-color: rgb(255, 255, 255);
   border: 4px double #686654;
+  border-radius: 20px;
   margin-bottom: 4rem;
-
 }
 
 #instructions {
@@ -149,7 +145,6 @@ select {
   color: #686654;
   margin-top: -2.5rem;
   background-color: rgb(255, 255, 255);
-
 }
 
 .slider-wrapper {
@@ -165,7 +160,6 @@ select {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   border-radius: 0.5rem;
-
 }
 
 .slider img {
@@ -173,7 +167,6 @@ select {
   scroll-snap-align: start;
   object-fit: scale-down;
   background-color: rgb(255, 255, 255);
-
 }
 
 .slide-nav {
@@ -203,7 +196,7 @@ select {
   padding: 1rem;
   background-color: rgb(255, 255, 255);
   border: 4px double #686654;
-
+  border-radius: 20px;
 }
 
 #News {
@@ -212,7 +205,6 @@ select {
   color: #686654;
   margin-top: -2.5rem;
   background-color: rgb(255, 255, 255);
-
 }
 
 .slider-wrapper2 {
@@ -228,7 +220,6 @@ select {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   border-radius: 0.5rem;
-
 }
 
 .slider2 img {
@@ -236,7 +227,6 @@ select {
   scroll-snap-align: start;
   object-fit: scale-down;
   background-color: rgb(255, 255, 255);
-
 }
 
 .slide-nav2 {
@@ -261,32 +251,26 @@ select {
 .slide-nav2 a:hover {
   opacity: 1;
 }
-
 .VisitorCounter {
-  margin-top: 1em;
-  display: flex;
+  margin:1em auto;
+  padding: auto;
+  border: 4px double #686654;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   color: #504e41;
-  background-color: #dbdada;
+  font-size: 15px;
 }
 
-.VisitorCounter h2 {
-  margin-bottom: 0%;
-  font-size: 22px;
-}
-
-.VisitorCounter p {
+.VisitorCounter p{
+  margin: 0%;
   font-size: 20px;
-  margin-top: 0%;
-  margin-bottom: 1%;
-
+  font-weight: 800;
 }
 
-.counter {
-  font-size: larger;
-  font-weight: 800;
+.VisitorCounter span {
+  font-size: 18px;
 }
 
 .footer {
@@ -295,24 +279,19 @@ select {
   color: aliceblue;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   width: 100%;
-  padding: 2%;
-}
-
-.footer div {
-  text-align: center;
+  padding: 3%;
+  font-size: larger;
 }
 
 .logf {
   display: flex;
-  width: 80px;
-  height: 80px;
-  margin: 20px;
-}
-
-.col1 h3 {
-  font-size: larger;
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  margin-right: 0%;
 }
 
 .col1 a {
@@ -349,15 +328,14 @@ select {
 }
 
 .login {
+  margin: auto;
   width: 400px;
-  height: 500px;
-  background-color: rgb(197, 250, 223);
+  height: fit-content;
+  background-color: rgb(142, 151, 148);
   color: white;
   border-radius: 20px;
-  border: 3px double rgb(97, 116, 114);
+  border: 3px double rgb(92, 94, 93);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
 }
 
@@ -367,27 +345,34 @@ select {
   padding: 40px;
   width: 100%;
   height: 100%;
-  backdrop-filter: brightness(40%);
   flex-direction: column;
   display: flex;
   gap: 5px;
+}
+.Flogin input{
+  border-radius: 20px;
+}
+.Flogin button{
+  margin-top: 2%;
+  width: 5em;
+  height: 2em;
+  color: #efefef;
+  border:#efefef double;
+  background-color:  rgb(104, 105, 104);
 }
 
 @media only screen and (max-width:1023px) {
   body {
     background-color: #f8fff2;
-
     .navbar {
       background-color: rgb(202, 228, 178);
       box-shadow: 5px 5px 5px 5px rgba(71, 114, 35, 0.233);
     }
-
     .log a {
       font-size: 30px;
       font-weight: 600;
       color: #3c5f28;
     }
-
     button,
     select {
       font-size: 14px;
@@ -396,7 +381,6 @@ select {
       height: 40px;
       width: 76px;
     }
-
     .image img {
       float: none;
       display: flex;
@@ -405,60 +389,48 @@ select {
       margin: auto;
       margin-top: 6px;
     }
-
     .crbiLOGO2 {
       margin: 14px;
       margin-bottom: 0%;
       margin-top: 1%;
     }
-
     .crbiLOGO2 img {
       width: 70px;
     }
-
     .descr2 a {
       color: rgb(35, 66, 47);
       font-size: 15px;
     }
-
     .descr2 a:hover {
       color: rgb(35, 66, 47);
       font-size: 16px;
       text-decoration: wavy;
     }
-
     #go-to-top {
-      bottom: 9em;
+      bottom: 0.5em;
       padding: 0;
       border-radius: 50%;
-      background-color: rgb(108, 117, 100);
+      background-color: rgb(84, 94, 76);
     }
-
     .container {
       background-color: #f8fff2;
       border: 4px double rgb(80, 92, 69);
     }
-
     #instructions {
       font-size: 27px;
       color: rgb(35, 66, 47);
       margin-top: -2.3rem;
       background-color: #f8fff2;
-
     }
-
     .slider-wrapper {
       max-width: 100%;
     }
-
     .slider img {
       background-color: #f8fff2;
     }
-
     .slide-nav a {
       background-color: #1b4131;
     }
-
     .container2 {
       background-color: #f8fff2;
       border: 4px double rgb(80, 92, 69);
@@ -485,15 +457,16 @@ select {
     }
 
     .VisitorCounter {
-      color: #1b4131;
-      background-color: #d4e4cf;
+      color: #2a4137;
+      font-size: 15px;
     }
-
-    .counter {
-      font-size: larger;
-      font-weight: 800;
+    
+    .VisitorCounter p{
+      font-size: 15px;
     }
-
+    .VisitorCounter span {
+      font-size: 15px;
+    }
     .footer {
       margin-top: 15px;
       background-color: rgb(80, 92, 69);
@@ -504,22 +477,18 @@ select {
       width: 100%;
       padding: 2%;
     }
-
     .footer div {
       text-align: center;
     }
-
     .logf {
       display: flex;
       width: 80px;
       height: 80px;
       margin: 20px;
     }
-
     .col2 input {
       width: 80%;
     }
-
     .col2 button {
       margin-top: 5px;
       width: 20%;
@@ -545,25 +514,31 @@ select {
       width: 1px;
       margin-bottom: 3px;
     }
+    .login {
+      margin: auto;
+      height: fit-content;
+      background-color:rgb(110, 131, 91);
+      border: 3px double rgb(63, 73, 54);
+
+    }
+    .Flogin button{
+      background-color:rgb(81, 95, 69);
+    }
   }
 }
-
 @media only screen and (max-width:540px) {
   body {
     background-color: #fefff8;
-
     /* style the head and give it color and size */
     .navbar {
       background-color: rgb(228, 224, 178);
       box-shadow: 5px 5px 5px 5px rgba(114, 102, 35, 0.233);
     }
-
     .log a {
       font-size: 25px;
       font-weight: 600;
       color: #694b0f;
     }
-
     button,
     select {
       font-size: 12px;
@@ -572,57 +547,44 @@ select {
       height: 35px;
       width: 65px;
     }
-
     .crbiLOGO1 {
       display: none;
     }
-
     .descr1 {
       display: block;
       background-color: #eee9a3;
       padding: 3px;
       margin-bottom: 10px;
     }
-
     .descr2 {
       text-align: center;
       border: 2px solid #f0e98a;
       width: auto;
       margin: 0;
     }
-
     .descr2 a {
       text-decoration: none;
       color: rgb(114, 91, 28);
       font-size: 14px;
-
     }
-
     .descr1 :hover {
       background-color: #e7df6d;
-
     }
-
     .descr2 a:hover {
       color: rgb(114, 91, 28);
       font-size: 14px;
     }
-
     #go-to-top {
-      bottom: 8em;
+      bottom: 0.5em;
       padding: 0;
       border-radius: 50%;
       background-color: #e7df6d;
     }
-
-
-
     .container {
       margin-top: 10%;
       background-color: #fefff8;
       border: 4px double rgb(114, 91, 28);
     }
-
     #instructions {
       font-size: 23px;
       color: rgb(114, 91, 28);
@@ -632,21 +594,17 @@ select {
       width: auto;
       border: 4px double rgb(114, 91, 28);
     }
-
     .slider img {
       background-color: #f8fff2;
     }
-
     .slide-nav a {
       background-color: rgb(151, 143, 71)
     }
-
     .container2 {
       margin-top: 10%;
       background-color: #fefff8;
       border: 4px double rgb(114, 91, 28);
     }
-
     #News {
       font-size: 23px;
       color: rgb(114, 91, 28);
@@ -656,44 +614,40 @@ select {
       width: auto;
       border: 4px double rgb(114, 91, 28);
     }
-
     .slider2 img {
       background-color: #f8fff2;
     }
-
     .slide-nav2 a {
       background-color: rgb(151, 143, 71);
     }
-
     .VisitorCounter {
-      color: #694b0f;
-      background-color: rgb(255, 250, 206)
+      color:  rgb(114, 91, 28);
+      font-size: 12px;
     }
-
-    .VisitorCounter h2 {
-
-      font-size: 18px;
+    .VisitorCounter p{
+      font-size: 12px;
+    } 
+    .VisitorCounter span {
+      font-size: 12px;
     }
-
-    .VisitorCounter p {
-      font-size: 16px;
-    }
-
-    .counter {
-      font-size: large;
-      font-weight: 400;
-    }
-
     .footer {
       background-color: rgb(151, 143, 71);
     }
-
     .footer div h3 {
       font-size: small;
     }
-
     .col1 a {
       font-size: smaller;
+    }
+    .login {
+      margin: auto;
+      height: fit-content;
+      background-color:rgb(151, 143, 71);
+      border: 3px double rgb(131, 126, 71);
+
+    }
+    .Flogin button{
+      background-color: rgb(100, 95, 50);
     }
   }
 }
