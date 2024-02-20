@@ -65,13 +65,6 @@ select {
   justify-content: flex-start;
 }
 
-.image img {
-  float: left;
-  margin: 40px;
-  width: 140px;
-  height: 140px;
-}
-
 .crbiLOGO1 {
   display: flex;
   justify-content: space-between;
@@ -119,8 +112,7 @@ select {
   position: fixed;
   bottom: 1.5em;
   right: 20px;
-  z-index: 999;
-  /* Make sure the button is always on top */
+  z-index: 999;/* Make sure the button is always on top */
   cursor: pointer;
   padding: 0;
   border-radius: 50%;
@@ -132,11 +124,11 @@ select {
 }
 
 .container {
-  padding: 1rem;
+  padding: 1em;
   background-color: rgb(255, 255, 255);
   border: 4px double #686654;
   border-radius: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 4em;
 }
 
 #instructions {
@@ -150,7 +142,7 @@ select {
 .slider-wrapper {
   position: relative;
   max-width: 50%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .slider {
@@ -171,7 +163,7 @@ select {
 
 .slide-nav {
   display: flex;
-  column-gap: 2rem;
+  column-gap: 2em;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -180,8 +172,8 @@ select {
 }
 
 .slide-nav a {
-  width: 3rem;
-  height: 0.75rem;
+  width: 3em;
+  height: 0.75em;
   border-radius: 20px;
   background-color: #535353;
   opacity: 0.88;
@@ -210,7 +202,7 @@ select {
 .slider-wrapper2 {
   position: relative;
   max-width: 50%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .slider2 {
@@ -219,7 +211,7 @@ select {
   overflow: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
 }
 
 .slider2 img {
@@ -251,8 +243,9 @@ select {
 .slide-nav2 a:hover {
   opacity: 1;
 }
+
 .VisitorCounter {
-  margin:1em auto;
+  margin:1rem auto;
   padding: auto;
   border: 4px double #686654;
   border-radius: 20px;
@@ -340,13 +333,12 @@ select {
 }
 
 .Flogin {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   padding: 40px;
   width: 100%;
   height: 100%;
   flex-direction: column;
-  display: flex;
   gap: 5px;
 }
 .Flogin input{
@@ -381,7 +373,7 @@ select {
       height: 40px;
       width: 76px;
     }
-    .image img {
+    .logo {
       float: none;
       display: flex;
       align-items: center;
@@ -470,11 +462,6 @@ select {
     .footer {
       margin-top: 15px;
       background-color: rgb(80, 92, 69);
-      color: aliceblue;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
       padding: 2%;
     }
     .footer div {

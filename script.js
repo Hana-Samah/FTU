@@ -32,6 +32,6 @@ localStorage.setItem('visitorCount', count);
 counterElement.innerText =  count;
 /////////////////////////////////////////////////////////////////
 document.getElementById('go-to-top').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent default anchor link behavior
-  window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+e.preventDefault(); // Prevent default anchor link behavior
+window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
 });
