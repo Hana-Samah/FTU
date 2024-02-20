@@ -1,9 +1,9 @@
 // Check if the user's browser supports local storage
 if (typeof(Storage) !== "undefined") {
   // Get the current date
-  var today = new Date();
+  let today = new Date();
   // Get the stored counter for today's date, or set it to 0 if it doesn't exist
-  var dailyCounter = localStorage.getItem(today.toISOString().split("T")[0]) || 0;
+  let dailyCounter = localStorage.getItem(today.toISOString().split("T")[0]) || 0;
   // Increment the counter
   dailyCounter++;
   // Store the updated counter for today's date
