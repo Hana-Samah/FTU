@@ -538,29 +538,26 @@ select {
       display: none;
     }
     .descr1 {
-      display: block;
+      display: none;
       background-color: #eee9a3;
       padding: 3px;
       margin-bottom: 10px;
     }
-    .descr2 {
-      text-align: center;
-      border: 2px solid #f0e98a;
-      width: auto;
-      margin: 0;
-    }
-    .descr2 a {
-      text-decoration: none;
-      color: rgb(114, 91, 28);
-      font-size: 14px;
-    }
-    .descr1 :hover {
-      background-color: #e7df6d;
-    }
-    .descr2 a:hover {
-      color: rgb(114, 91, 28);
-      font-size: 14px;
-    }
+    
+    .hamburger-menu {
+      display: none;
+  }
+
+  @media (max-width: 767px) {
+      .hamburger-menu {
+          display: block;
+      }
+
+      .descr1 {
+          display: none;
+      }
+  }
+
     #go-to-top {
       bottom: 0.5em;
       padding: 0;

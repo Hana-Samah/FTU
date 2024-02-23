@@ -9,6 +9,7 @@ if (typeof(Storage) !== "undefined") {
   // Store the updated counter for today's date
   localStorage.setItem(today.toISOString().split("T")[0], dailyCounter);
   // Display the counter on the web page
+
   document.getElementById("dailyCounter").innerHTML = dailyCounter;
 } else {
   document.getElementById("dailyCounter").innerHTML = "Local storage is not supported by your browser.";
@@ -35,3 +36,4 @@ document.getElementById('go-to-top').addEventListener('click', function(e) {
 e.preventDefault(); // Prevent default anchor link behavior
 window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
 });
+
