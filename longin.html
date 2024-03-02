@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>long in</title>
+    <script type="text/javascript">
+		function validate() {
+			let username = document.getElementById('username').value;
+			if (username.length !== 9 || !/^66/.test(username)) {
+				alert('Please enter a valid 9-digit string of numbers with the first two digits starting with 66.');
+			} else {
+				document.getElementById('flogin').submit();
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -28,17 +38,17 @@
     </nav>
     <br>
     <!-- creat the login page -->
-    <div id="error"></div>
+
     <div class="login">
-        <form class="Flogin" name="flogin">
-            <h1>LOGIN</h1>
-            <label for="username">User Name</label>
-            <input type="text" id="username" name="username">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-            <button>Submit</button>
-        </form>
-    </div>
+		<form class="Flogin" name="flogin">
+			<h1>LOGIN</h1>
+			<label for="username">User Name</label>
+			<input type="text" id="username" name="username">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password">
+			<button onclick="validate()">Submit</button>
+		</form>
+	</div>
 </body>
 
 </html>

@@ -82,12 +82,13 @@ select {
   width: 90px;
 }
 
-.descr1 {
+
+.menu {
   display: flex;
   justify-content: space-between;
 }
 
-.descr2 {
+.menu-item {
   text-decoration: none;
   margin: 14px;
   margin-top: 0px;
@@ -96,13 +97,13 @@ select {
   text-align: center;
 }
 
-.descr2 a {
+.menu-item a {
   color: #3b464d;
   font-size: 20px;
   font-weight: 550;
 }
 
-.descr2 a:hover {
+.menu-item a:hover {
   color: #3b464d;
   font-size: 21px;
 
@@ -389,11 +390,11 @@ select {
     .crbiLOGO2 img {
       width: 70px;
     }
-    .descr2 a {
+    .menu-item a {
       color: rgb(35, 66, 47);
       font-size: 15px;
     }
-    .descr2 a:hover {
+    .menu-item a:hover {
       color: rgb(35, 66, 47);
       font-size: 16px;
       text-decoration: wavy;
@@ -537,26 +538,66 @@ select {
     .crbiLOGO1 {
       display: none;
     }
-    .descr1 {
-      display: none;
-      background-color: #eee9a3;
-      padding: 3px;
-      margin-bottom: 10px;
-    }
+    .burger-menu {
+      z-index: 500;
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+  }
+  
+  .burger-container {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+  }
+  
+  .burger-line {
+      width: 100%;
+      height: 3px;
+      background-color:#50390d;
+      margin: 5px 0;
+      transition: all 0.3s;
+  }
+
+  
+  .burger-container:hover .burger-line {
+      background-color: #41330f;
+  }
+  
+  .menu {
+      position: fixed;
+      display: block;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #f8f8f8;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+       z-index: 999;
+  }
+  
+  .menu.active {
+      right: 0;
+  }
+  
+  .menu-item {
+      padding: 6px;
+  }
+  
+  .menu-item a {
+      text-decoration: none;
+      color: #41330f;
+  }
+  
+  .menu-item a:hover {
+      color: #2b2109;
+  }
     
-    .hamburger-menu {
-      display: none;
-  }
-
-  @media (max-width: 767px) {
-      .hamburger-menu {
-          display: block;
-      }
-
-      .descr1 {
-          display: none;
-      }
-  }
+  
 
     #go-to-top {
       bottom: 0.5em;
