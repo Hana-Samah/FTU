@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-hello word 3333
-=======
-hello word
->>>>>>> secBranch
