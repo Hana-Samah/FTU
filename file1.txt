@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 hello word 3333
 =======
 hello word
@@ -7,3 +8,6 @@ hello word
 =======
 hello word 33
 >>>>>>> thirdBranch
+=======
+hello word 22
+>>>>>>> secBranch
