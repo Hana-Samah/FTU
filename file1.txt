@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+hello word 3333
+=======
+hello word
+>>>>>>> secBranch
+=======
+hello word 33
+>>>>>>> thirdBranch
